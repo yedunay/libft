@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ydunay <ydunay@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/14 11:46:03 by ydunay            #+#    #+#             */
-/*   Updated: 2023/10/14 17:59:26 by ydunay           ###   ########.fr       */
+/*   Created: 2023/10/14 15:14:03 by ydunay            #+#    #+#             */
+/*   Updated: 2023/10/14 18:10:36 by ydunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-
-	if (n == 0)
-		return (0);
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
-	{
-		if (i < (n - 1))
-			i++;
-		else
-			return (0);
-	}
-	return ((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
+	char	*new;
+	size_t	total_length;
+    size_t  i;
+    
+    i = 0;
+	total_length = (ft_strlen(s1) + ft_strlen(s2));
+	if (!s1 || !s2)
+		return (NULL);
+	new = (char *)malloc(total_length + 1);
+	if (!new)
+		return (NULL);
+	while (*s1)
+		*(new + i++) = *s1++;
+	while (*s2)
+		*(new + i++) = *s2++;
+	new[i] = '\0';
+    
+	return (new);
 }
