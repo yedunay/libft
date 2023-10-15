@@ -6,7 +6,7 @@
 /*   By: ydunay <ydunay@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 18:33:14 by ydunay            #+#    #+#             */
-/*   Updated: 2023/10/14 19:17:26 by ydunay           ###   ########.fr       */
+/*   Updated: 2023/10/15 09:12:59 by ydunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-    size_t	i;
+	size_t	i;
 
 	if (!s1 || !set)
 		return (0);
@@ -25,4 +25,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i--;
 	return (ft_substr(s1, 0, i + 1));
 }
-    

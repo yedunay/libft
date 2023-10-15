@@ -6,11 +6,12 @@
 /*   By: ydunay <ydunay@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 13:16:03 by ydunay            #+#    #+#             */
-/*   Updated: 2023/10/14 18:03:54 by ydunay           ###   ########.fr       */
+/*   Updated: 2023/10/15 09:11:20 by ydunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

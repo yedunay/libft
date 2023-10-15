@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ydunay <ydunay@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
+/*   By: ydunay <ydunay@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 11:46:45 by ydunay            #+#    #+#             */
-/*   Updated: 2023/10/14 11:46:47 by ydunay           ###   ########.tr       */
+/*   Updated: 2023/10/15 09:16:28 by ydunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <unistd.h>
 
 typedef struct s_list
 {
