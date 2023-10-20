@@ -25,12 +25,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char d[4] = "YED";
-// 	char s[4] = "DEY";
-// 	ft_memmove(d, s, 3);
-// 	printf("%s", d);
-// }

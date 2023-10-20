@@ -64,21 +64,3 @@ char	*ft_itoa(int n)
 	result[len + offset] = '\0';
 	return (result);
 }
-// #include <stdio.h>
-// int	main(void)
-// {
-
-// 	int	i = 0;
-// 	int j = -1234;
-// 	int k = -42;
-// 	int l = 2147483647;
-// 	int m = -2147483648;
-
-// 	for (int z = 0; z < int_len(m); z++)
-// 		printf("The result for %d is: %c\n", m, ft_itoa(m)[z]);
-// 	printf("The result of %d in itoa is: %s\n",i ,ft_itoa(i));
-// 	printf("The result of %d in itoa is: %s\n",j ,ft_itoa(j));
-// 	printf("The result of %d in itoa is: %s\n",k ,ft_itoa(k));
-// 	printf("The result of %d in itoa is: %s\n",l ,ft_itoa(l));
-// 	printf("The result of %d in itoa is: %s\n",m ,ft_itoa(m));
-// }
