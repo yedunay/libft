@@ -1,94 +1,116 @@
+# 42cursus libft
+
 <h1 align="center">
-	42cursus libft
+    42cursus libft
 </h1>
 
 <p align="center">
-	<b><i>First repo for 42cursus' libft project</i></b><br>
+    <b><i>First repo for 42cursus' libft project</i></b><br>
 </p>
 
 ## 🗣️ About
 
-> _The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects._
-
-	🚀 TLDR: this project consists of coding basic C functions (see below), which are then compiled
-	into a library for use in other projects of the cursus.
+Welcome to my libft project! This is the first repository for the 42cursus curriculum, where the goal is to create a custom C library containing essential functions. This library can then be used in various projects throughout the cursus.
 
 ### Functions from `<ctype.h>` library
 
-* [`ft_isascii`]	- test for ASCII character.
-* [`ft_isalnum`]	- alphanumeric character test.
-* [`ft_isalpha`]	- alphabetic character test.
-* [`ft_islower`] 	- lower-case character test.
-* [`ft_isupper`] 	- upper-case character test.
-* [`ft_isdigit`]	- decimal-digit character test.
-* [`ft_isprint`]	- printing character test (space character inclusive).
-* [`ft_isspace`] 	- white-space character test.
-* [`ft_isblank`] 	- space or tab character test.
-* [`ft_ispunct`] 	- punctuation character test.
-* [`ft_iscntrl`]	- control character test.
-* [`ft_tolower`]	- upper case to lower case letter conversion.
-* [`ft_toupper`]	- lower case to upper case letter conversion.
+- [`ft_isascii`] - Test for ASCII character.
+- [`ft_isalnum`] - Alphanumeric character test.
+- [`ft_isalpha`] - Alphabetic character test.
+- [`ft_islower`] - Lower-case character test.
+- [`ft_isupper`] - Upper-case character test.
+- [`ft_isdigit`] - Decimal-digit character test.
+- [`ft_isprint`] - Printing character test (space character inclusive).
+- [`ft_isspace`] - White-space character test.
+- [`ft_isblank`] - Space or tab character test.
+- [`ft_tolower`] - Upper case to lower case letter conversion.
+- [`ft_toupper`] - Lower case to upper case letter conversion.
 
 ### Functions from `<stdlib.h>` library
 
-* [`ft_atoi`]	- convert ASCII string to integer.
-* [`ft_calloc`] - memory allocation.
+- [`ft_atoi`]   - Convert ASCII string to integer.
+- [`ft_calloc`] - Memory allocation.
 
 ### Functions from `<strings.h>` library
 
-* [`ft_bzero`]  - write zeroes to a byte string.
-* [`ft_memset`] - write a byte to a byte string.
-* [`ft_memchr`] - locate byte in byte string.
-* [`ft_memcmp`] - compare byte string.
-* [`ft_memmove`]- copy byte string.
-* [`ft_memcpy`] - copy memory area.
-* [`ft_memccpy`]- copy string until character found.
+- [`ft_bzero`]  - Write zeroes to a byte string.
+- [`ft_memset`] - Write a byte to a byte string.
+- [`ft_memchr`] - Locate byte in byte string.
+- [`ft_memcmp`] - Compare byte string.
+- [`ft_memmove`] - Copy byte string.
+- [`ft_memcpy`] - Copy memory area.
 
 ### Functions from `<string.h>` library
 
-* [`ft_strlen`]	  - find length of string.
-* [`ft_strchr`]	  - locate character in string (first occurrence).
-* [`ft_strrchr`]  - locate character in string (last occurence).
-* [`ft_strstr`]	  - locate a substring in a string.
-* [`ft_strnstr`]  - locate a substring in a string (size-bounded).
-* [`ft_strcmp`]	  - compare strings.
-* [`ft_strncmp`]  - compare strings (size-bounded).
-* [`ft_strcpy`]	  - copy strings.
-* [`ft_strncpy`]  - copy strings (size-bounded).
-* [`ft_strdup`]	  - save a copy of a string (with malloc).
-* [`ft_strndup`]  - save a copy of a string (with malloc, size-bounded).
-* [`ft_strcat`]	  - concatenate strings (s2 into s1).
-* [`ft_strncat`]  - concatenate strings (s2 into s1, size-bounded).
-* [`ft_strlcpy`]  - size-bounded string copying.
-* [`ft_strlcat`]  - size-bounded string concatenation.
+- [`ft_strlen`]    - Find length of string.
+- [`ft_strchr`]    - Locate character in string (first occurrence).
+- [`ft_strrchr`]   - Locate character in string (last occurrence).
+- [`ft_strnstr`]   - Locate a substring in a string (size-bounded).
+- [`ft_strcmp`]    - Compare strings.
+- [`ft_strncmp`]   - Compare strings (size-bounded).
+- [`ft_strcpy`]    - Copy strings.
+- [`ft_strncpy`]   - Copy strings (size-bounded).
+- [`ft_strdup`]    - Save a copy of a string (with malloc).
+- [`ft_strndup`]   - Save a copy of a string (with malloc, size-bounded).
+- [`ft_strcat`]    - Concatenate strings (s2 into s1).
+- [`ft_strncat`]   - Concatenate strings (s2 into s1, size-bounded).
+- [`ft_strlcpy`]   - Size-bounded string copying.
+- [`ft_strlcat`]   - Size-bounded string concatenation.
 
 ### Non-standard functions
 
-* [`ft_swap`]		- swap value of two integers.
-* [`ft_putchar`]	- output a character to stdout.
-* [`ft_putchar_fd`]	- output a character to given file.
-* [`ft_putstr`]		- output string to stdout.
-* [`ft_putstr_fd`]	- output string to given file.
-* [`ft_putendl`]	- output string to stdout with newline.
-* [`ft_putendl_fd`]	- output string to given file with newline.
-* [`ft_putnbr`]		- output integer to stdout.
-* [`ft_putnbr_fd`]	- output integer to given file.
-* [`ft_itoa`]		- convert integer to ASCII string.
-* [`ft_substr`]		- extract substring from string.
-* [`ft_strtrim`]	- trim beginning and end of string with the specified characters.
-* [`ft_strjoin`]	- concatenate two strings into a new string (with malloc).
-* [`ft_split`]		- split string, with specified character as delimiter, into an array of strings.
-* [`ft_split_free`]	- free splitted string.
-* [`ft_strmapi`]	- create new string from modifying string with specified function.
+- [`ft_swap`]        - Swap value of two integers.
+- [`ft_putchar`]     - Output a character to stdout.
+- [`ft_putchar_fd`]  - Output a character to a given file.
+- [`ft_putstr`]      - Output string to stdout.
+- [`ft_putstr_fd`]   - Output string to a given file.
+- [`ft_putendl`]     - Output string to stdout with newline.
+- [`ft_putendl_fd`]  - Output string to a given file with newline.
+- [`ft_putnbr`]      - Output integer to stdout.
+- [`ft_putnbr_fd`]   - Output integer to a given file.
+- [`ft_itoa`]        - Convert integer to ASCII string.
+- [`ft_substr`]      - Extract substring from string.
+- [`ft_strtrim`]     - Trim beginning and end of string with specified characters.
+- [`ft_strjoin`]     - Concatenate two strings into a new string (with malloc).
+- [`ft_split`]       - Split string with specified character as delimiter into an array of strings.
+- [`ft_strmapi`]     - Create a new string from modifying a string with a specified function.
 
 ### Linked list functions
 
-* [`ft_lstnew`]       - create new list.
-* [`ft_lstsize`]	  - count elements of a list.
-* [`ft_lstlast`]	  - find last element of list.
-* [`ft_lstadd_back`]  - add new element at end of list.
-* [`ft_lstadd_front`] - add new element at beginning of list.
-* [`ft_lstdelone`]    - delete element from list.
-* [`ft_lstclear`]     - delete sequence of elements of list from a starting point.
-* [`ft_lstiter`]      - apply function to content of all list's elements.
-* [`ft_lstmap`]       - apply function to content of all list's elements into new list.
+- [`ft_lstnew`]       - Create a new list.
+- [`ft_lstsize`]      - Count elements of a list.
+- [`ft_lstlast`]      - Find the last element of a list.
+- [`ft_lstadd_back`]  - Add a new element at the end of a list.
+- [`ft_lstadd_front`] - Add a new element at the beginning of a list.
+- [`ft_lstdelone`]    - Delete an element from a list.
+- [`ft_lstclear`]     - Delete a sequence of elements of a list from a starting point.
+- [`ft_lstiter`]      - Apply a function to the content of all list's elements.
+- [`ft_lstmap`]       - Apply a function to the content of all list's elements into a new list.
+
+## Usage
+
+To use this library in your projects, follow these steps:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/yedunay/libft.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd libft
+    ```
+
+3. Compile the library:
+
+    ```bash
+    make
+    ```
+
+4. You can now use the compiled library (`libft.a`) in your projects.
+
+## Contributing
+
+Feel free to contribute to the project by submitting issues, suggesting improvements, or proposing new features. Pull requests are welcome!
